@@ -1,0 +1,41 @@
+section{
+    background: url(/assets/bg3.webp) no-repeat center/cover;
+    padding: 4rem 8rem;
+}
+
+div{
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+div, img{
+    width: 50%;
+}
+
+span{
+    width: 80%;
+}
+
+h2{
+    color: var(--primary);
+    font-family: workBold;
+    font-size: 1.6rem;
+}
+
+h3{
+    background: var(--primary);
+    color: #fff;
+    padding: .5em;
+}
+
+@media screen and (max-width: 720px) {
+    section{
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    div, img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+section{
+    padding: 0;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 720px) {
+    section{
+        background: url(/assets/bg3.webp) no-repeat center/cover;
+    }
+}

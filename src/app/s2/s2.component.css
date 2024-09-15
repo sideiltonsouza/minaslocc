@@ -1,0 +1,41 @@
+section{
+    flex-direction: column;
+    background: linear-gradient(to top, var(--secondary) 0 50%, var(--primary) 50% 100% );
+}
+
+img{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+div{
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    margin-top: -4rem;
+    gap: .5rem;
+    border-radius: 1rem;
+}
+
+h1{
+    color: var(--primary);
+}
+
+h3{
+    background: var(--secondary);
+    color: #fff;
+    width: 100%;
+    padding: .5em;
+}
+
+@media screen and (max-width: 720px) {
+    section{
+        background: linear-gradient(to bottom, var(--secondary) 0 50%, var(--primary) 50% 100% );
+    }
+
+    div{
+        padding: 2rem 1rem;
+    }
+}

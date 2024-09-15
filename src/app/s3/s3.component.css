@@ -1,0 +1,43 @@
+section{
+    flex-direction: column;
+    height: 90vh;
+    background: url(/assets/bg2.webp) no-repeat center/cover;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+strong{
+    color: var(--primary);
+}
+
+div{
+    gap: 1em;
+    margin-top: 3rem;
+    align-items: flex-start;
+}
+
+img{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+
+@media screen and (max-width:720px) {
+    section{
+        height: auto;
+    }
+
+    div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        max-width: unset;
+        width: 80%;
+    }
+}

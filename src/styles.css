@@ -1,1 +1,109 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    font-family: work, Arial, Helvetica, sans-serif;
+    color: var(--secondary);
+}
+
+@font-face {
+    font-family: work;
+    src: url(/assets/WorkSans-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: workBold;
+    src: url(/assets/WorkSans-Bold.ttf);
+    font-display: swap;
+}
+
+:root{
+    --primary: #952630;
+
+    --secondary: #4c4e50;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 6rem;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 20rem;
+    position: relative;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1, h1>strong{
+    font-family: workBold;
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width: 720px) {
+    section{
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+}
+
+@keyframes btnPulse {
+    to{
+        scale: 1.05;
+    }
+}
+
+.oculta{
+    display: none;
+}
+
+.zoom{
+    animation: zoom both;
+    animation-timeline: view(40% 5%);
+}
+
+.toLeft{
+    animation: toLeft;
+    animation-timeline: view();
+}
+
+@keyframes zoom {
+    from{
+        opacity: 0;
+        scale: .6;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes toLeft {
+    from{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

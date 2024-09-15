@@ -1,0 +1,79 @@
+section {
+    background: url(/assets/bg4.jpg) no-repeat center/cover;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.galeria {
+    flex-wrap: wrap;
+    gap: 1em;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.item {
+    scroll-snap-align: start;
+    width: 30%;
+    flex-direction: column;
+    min-height: 70%;
+    border-radius: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    background: #fff;
+    padding: .5em;
+    width: 100%;
+    color: var(--secondary);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+p>strong {
+    color: var(--secondary);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: .5em 1em;
+    font-size: 1.3rem;
+    border-radius: 1em;
+    background: #00aa1c;
+    color: #fff;
+    animation: ease-in-out btnPulse 1s infinite alternate;
+}
+
+@media screen and (max-width: 720px) {
+    section{
+        padding: 2rem 1rem;
+    }
+
+    .galeria{
+        width: 100vw;
+        height: 45vh;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+    }
+
+    .item{
+        scroll-snap-align: center;
+        min-width: 80%;
+    }
+}

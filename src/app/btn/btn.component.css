@@ -1,0 +1,26 @@
+button{
+    z-index: 20;
+    position: fixed;
+    bottom: 0;
+    background: var(--primary);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    animation: ease-in-out btnPulse 1s infinite alternate;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+h1, p{
+    color: #fff;
+}
+
+
+button:hover{
+    background: var(--secondary);
+}

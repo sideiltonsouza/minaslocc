@@ -1,0 +1,28 @@
+section {
+    flex-direction: column;
+    text-align: center;
+    background: var(--primary);
+    gap: 2rem;
+}
+
+h1{
+    color: #fff;
+}
+
+div{
+    gap: 1em;
+}
+
+img{
+    width: 25%;
+}
+
+@media screen and (max-width: 720px) {
+    div{
+        flex-direction: column;
+    }
+
+    img{
+        width: 80%;
+    }
+}
