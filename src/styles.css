@@ -9,10 +9,11 @@
     color: var(--secondary);
 }
 
-@font-face {
-    font-family: work;
-    src: url(/assets/WorkSans-Regular.ttf);
-    font-display: swap;
+
+:root{
+    --primary: #952630;
+    
+    --secondary: #4c4e50;
 }
 
 @font-face {
@@ -21,11 +22,12 @@
     font-display: swap;
 }
 
-:root{
-    --primary: #952630;
-
-    --secondary: #4c4e50;
+@font-face {
+    font-family: work;
+    src: url(/assets/WorkSans-Regular.ttf);
+    font-display: swap;
 }
+
 
 html{
     overflow-y: scroll;
@@ -54,9 +56,22 @@ div{
 }
 
 h1, h1>strong{
-    font-family: workBold;
+    font-family: workBold, Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
+
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: .5em 1em;
+    font-size: 1.3rem;
+    border-radius: 1em;
+    background: #00aa1c;
+    color: #fff;
+    animation: ease-in-out btnPulse 1s infinite alternate;
+}
+
 
 
 @media screen and (max-width: 720px) {

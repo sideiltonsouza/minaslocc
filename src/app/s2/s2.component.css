@@ -1,6 +1,7 @@
 section{
     flex-direction: column;
     background: linear-gradient(to top, var(--secondary) 0 50%, var(--primary) 50% 100% );
+    gap: 1rem;
 }
 
 img{
@@ -14,7 +15,6 @@ div{
     padding: 2rem;
     text-align: center;
     background: #fff;
-    margin-top: -4rem;
     gap: .5rem;
     border-radius: 1rem;
 }
@@ -31,9 +31,6 @@ h3{
 }
 
 @media screen and (max-width: 720px) {
-    section{
-        background: linear-gradient(to bottom, var(--secondary) 0 50%, var(--primary) 50% 100% );
-    }
 
     div{
         padding: 2rem 1rem;

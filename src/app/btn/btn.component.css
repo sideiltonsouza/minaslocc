@@ -9,6 +9,7 @@ button{
     text-align: center;
     cursor: pointer;
     animation: ease-in-out btnPulse 1s infinite alternate;
+    border-radius: 0;
 }
 
 h1{
@@ -20,7 +21,20 @@ h1, p{
     color: #fff;
 }
 
-
 button:hover{
     background: var(--secondary);
+}
+
+@media screen and (max-width: 720px) {
+    button{
+        padding: .5em;
+    }
+
+    h1{
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
 }

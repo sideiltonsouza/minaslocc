@@ -45,17 +45,6 @@ p>strong {
     color: var(--secondary);
 }
 
-button{
-    cursor: pointer;
-    border: none;
-    padding: .5em 1em;
-    font-size: 1.3rem;
-    border-radius: 1em;
-    background: #00aa1c;
-    color: #fff;
-    animation: ease-in-out btnPulse 1s infinite alternate;
-}
-
 @media screen and (max-width: 720px) {
     section{
         padding: 2rem 1rem;

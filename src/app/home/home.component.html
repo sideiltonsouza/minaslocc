@@ -1,5 +1,5 @@
 <section>
-    <video controls muted [playsInline]="true" poster="assets/poster.jpg">
+    <video controls [playsInline]="true" [autoplay]="true" oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="assets/home.mp4" type="video/mp4">
         <source src="assets/home.webm" type="video/webm">
       </video> 
