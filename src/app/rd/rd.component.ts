@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Formulario } from '../formulario';
 
 @Component({
   selector: 'app-rd',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './rd.component.html',
   styleUrl: './rd.component.css'
 })
-export class RdComponent {
+export class RdComponent extends Formulario{
 
 }

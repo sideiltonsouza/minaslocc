@@ -1,0 +1,22 @@
+
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+}
+
+.close span {
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--primary);
+    transform: rotate(45deg);
+}
+
+.close span:first-of-type {
+    transform: rotate(-45deg);
+}

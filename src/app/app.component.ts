@@ -9,14 +9,32 @@ import { S5Component } from "./s5/s5.component";
 import { S6Component } from "./s6/s6.component";
 import { FooterComponent } from "./footer/footer.component";
 import { FormComponent } from "./form/form.component";
+import { RdComponent } from "./rd/rd.component";
+import { Formulario } from './formulario';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, BtnComponent, S2Component, S3Component, S4Component, S5Component, S6Component, FooterComponent, FormComponent],
+  imports: [RouterOutlet, HomeComponent, BtnComponent, S2Component, S3Component, S4Component, S5Component, S6Component, FooterComponent, FormComponent, RdComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'minaslocc';
+export class AppComponent extends Formulario{
+  
+
+  public formularioA = () =>{
+    // document.querySelector('app-s6')!.scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "start",
+    //     inline: "nearest"
+    //     });
+    // var form = <HTMLElement>document.querySelector('#contForm')!
+
+    // form.classList.toggle("oculta")
+
+    this.formulario()
+
+}
+
+
 }
