@@ -1,19 +1,35 @@
-section{
+section {
     position: fixed;
     top: 0;
+    left: auto;
     background: #ffffff;
     width: 100vw;
     height: 100vh;
     z-index: 21;
-    overflow: scroll;
+    padding: 1rem;
 }
 
-.close{
-    width: 4rem;
-    height: 4rem;
+@media screen and (min-width: 769px) {
+    section {
+        max-width: 600px;
+        height: calc(100vh - 4rem);
+        top: 2rem;
+        margin: 0 auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
-span{
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 3rem;
+    height: 3rem;
+    background: #fff;
+}
+
+span {
     width: 100%;
     position: absolute;
     height: 4px;
@@ -22,6 +38,6 @@ span{
     transform: rotate(45deg);
 }
 
-span:first-of-type{
+span:first-of-type {
     transform: rotate(-45deg);
 }
